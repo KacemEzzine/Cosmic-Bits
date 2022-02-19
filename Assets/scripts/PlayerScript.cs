@@ -25,6 +25,7 @@ public class PlayerScript : MonoBehaviour
     public bool InputFeedBack;
     public Animator ShipAnimator;
     public GameObject UI;
+    public Transform FirePoint;
 
 
     Vector3 lookingPos;
@@ -90,7 +91,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0) && Time.time > _canFire)
         {
             _canFire = _fireRate + Time.time;
-            Instantiate(_LaserPrefab, transform.position + new Vector3(0, 0 , transform.position.z), Quaternion.identity);
+            Instantiate(_LaserPrefab, FirePoint.position + new Vector3(0, 0 , FirePoint.position.z), Quaternion.identity);
 
         }
     }

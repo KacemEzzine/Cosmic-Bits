@@ -15,6 +15,7 @@ public class EnemyMinionScript : MonoBehaviour
     [SerializeField]
     private float _canFire = 0.0f;
 
+
     void Start()
     {
         

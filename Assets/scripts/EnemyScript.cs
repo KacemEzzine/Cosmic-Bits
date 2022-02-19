@@ -18,6 +18,7 @@ public class EnemyScript : MonoBehaviour
     public float _fireRate = 20f;
     [SerializeField]
     private float _canFire = 0.0f;
+    public Transform FirePoint;
 
     public static EnemyScript Ref;
     private void Awake()
@@ -65,7 +66,7 @@ public class EnemyScript : MonoBehaviour
         if (Time.time > _canFire)
         {
             _canFire = _fireRate + Time.time;
-            Instantiate(_LaserPrefab, transform.position + new Vector3(0, -1f, transform.position.z), Quaternion.identity);
+            Instantiate(_LaserPrefab, FirePoint.position + new Vector3(0, -1f, FirePoint.position.z), Quaternion.identity);
             
         }
     }
