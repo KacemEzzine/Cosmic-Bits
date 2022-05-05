@@ -6,25 +6,32 @@ public class BlackOrbScript : MonoBehaviour
 {
     [SerializeField]
     private float _LaserSpeed = 1f;
-
+    
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        transform.Translate(Vector3.down * _LaserSpeed * Time.deltaTime);
+        transform.Translate(Vector3.up * _LaserSpeed * Time.deltaTime);
 
         
-            Destroy(this.gameObject,3.5f);
+        Destroy(this.gameObject,3.5f);
 
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Lazer")
+        {
+            FindObjectOfType<SoundManagerScript>().Play("BlackOrbCollision");
+        }
+    }
 
-  
+
 
 }

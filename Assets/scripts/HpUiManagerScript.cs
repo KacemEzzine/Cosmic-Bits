@@ -8,7 +8,10 @@ public class HpUiManagerScript : MonoBehaviour
 {
    
     public TextMeshProUGUI PlayerHP; 
-    public TextMeshProUGUI BossHP;
+    
+    public BaseEnemyScript Enemy;
+
+
     public int A;
     void Start()
     {
@@ -20,13 +23,13 @@ public class HpUiManagerScript : MonoBehaviour
     {
        
         PlayerHP.text = PlayerScript.Ref.HP.ToString();
-        if (EnemyScript.Ref.EnemyHp >= 0) {
-        A = (int)EnemyScript.Ref.EnemyHp;
+        if (Enemy.EnemyHp >= 0) {
+        A = (int)Enemy.EnemyHp;
         }else
         {
             A = 0;
         }
-        BossHP.text = A.ToString();
+
 
 
     }

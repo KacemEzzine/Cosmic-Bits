@@ -15,6 +15,13 @@ public class RayCastCam : MonoBehaviour
     // Update is called once per frame
     private void LateUpdate()
     {
-        transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, transform.position.z);
+     // if (Player.transform.position.x < -13 || Player.transform.position.x>13) { 
+     // transform.position = new Vector3(transform.position.x, Player.transform.position.y, transform.position.z);
+     // }
+     // else
+     // {
+            transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, transform.position.z);
+       // }
+        
     }
 }
