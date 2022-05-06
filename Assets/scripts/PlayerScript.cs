@@ -1,8 +1,7 @@
-﻿
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class PlayerScript : MonoBehaviour
 {
@@ -30,13 +29,19 @@ public class PlayerScript : MonoBehaviour
     public GameObject OmegaLaserPrefab;
     public float MaxHightLimit = 0;
 
-    
 
     
 
+    
 
-    Vector3 lookingPos;
-    public Camera cam;
+
+    
+    
+   
+    
+    public bool EventCameraOn;
+
+
     //--VERTUAL POINT FOR THE PLAYER TO AIM AT--
     public BRUUUUUUH BRUH;
     public static PlayerScript Ref;
@@ -59,7 +64,7 @@ public class PlayerScript : MonoBehaviour
       {
           Destroy(this.gameObject);
       }
-
+      
     }
     
     void Start()
@@ -229,16 +234,17 @@ public class PlayerScript : MonoBehaviour
             Destroy(other.gameObject);
 
         }
+        if (other.tag == "Event1")
+        {
+            EventCameraOn = true;
+        }
     }
-  //void Dash()
-  //{
-  //    float horizontalInput = Input.GetAxis("Horizontal");
-  //    float verticalInput = Input.GetAxis("Vertical");
-  //    if (Input.GetKeyDown(KeyCode.Space)&& Time.time > _canDash)
-  //    {
-  //        _canDash = 0.5f + Time.time;
-  //        transform.position = new Vector3(transform.position.x + horizontalInput * _DashPower * Time.deltaTime, transform.position.y + verticalInput * _DashPower * Time.deltaTime, 0 * Time.deltaTime);
-  //        
-  //    }
-  //}
+   private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Event1")
+        {
+            EventCameraOn = false;
+        }
+    }
+  
 }

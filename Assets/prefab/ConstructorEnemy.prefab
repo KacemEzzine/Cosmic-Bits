@@ -85,7 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyHp: 1000
   _Speed: 7
-  _LaserPrefab: {fileID: 2413940359284219505, guid: 94cf383e55a978e4e81670656ff804db,
+  _LaserPrefab: {fileID: 8780196879014860892, guid: 2a72970ecf50e274c9d0cc05535f2547,
     type: 3}
   _fireRate: 0.2
   _canFire: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   BlinkIntensity: 1
   BlinkDuration: 0.2
   BlinkTimer: 0
-  UnLaserPrefab1: {fileID: 6155277003565545722, guid: f199aac2499292849bffcfc6dfb32363,
+  UnLaserPrefab1: {fileID: 8780196879014860892, guid: 2a72970ecf50e274c9d0cc05535f2547,
     type: 3}
   BulletStep: 0
 --- !u!65 &4334583048451402287

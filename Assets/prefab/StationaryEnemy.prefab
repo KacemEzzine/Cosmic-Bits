@@ -253,13 +253,13 @@ MonoBehaviour:
     type: 3}
   LaserPrefab4: {fileID: 2413940359284219505, guid: 94cf383e55a978e4e81670656ff804db,
     type: 3}
-  UnLaserPrefab1: {fileID: 6155277003565545722, guid: f199aac2499292849bffcfc6dfb32363,
+  UnLaserPrefab1: {fileID: 8780196879014860892, guid: 2a72970ecf50e274c9d0cc05535f2547,
     type: 3}
-  UnLaserPrefab2: {fileID: 6155277003565545722, guid: f199aac2499292849bffcfc6dfb32363,
+  UnLaserPrefab2: {fileID: 8780196879014860892, guid: 2a72970ecf50e274c9d0cc05535f2547,
     type: 3}
-  UnLaserPrefab3: {fileID: 6155277003565545722, guid: f199aac2499292849bffcfc6dfb32363,
+  UnLaserPrefab3: {fileID: 8780196879014860892, guid: 2a72970ecf50e274c9d0cc05535f2547,
     type: 3}
-  UnLaserPrefab4: {fileID: 6155277003565545722, guid: f199aac2499292849bffcfc6dfb32363,
+  UnLaserPrefab4: {fileID: 8780196879014860892, guid: 2a72970ecf50e274c9d0cc05535f2547,
     type: 3}
   BulletStep: 0
 --- !u!54 &1561936239

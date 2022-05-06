@@ -8,6 +8,7 @@ TagManager:
   - DarkOrb
   - HasHP
   - Undestructable
+  - Event1
   layers:
   - Default
   - TransparentFX
